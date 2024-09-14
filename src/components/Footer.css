@@ -1,0 +1,42 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #1f1f1f; /* Dark background for the footer */
+    color: #fff; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px; /* Space above the footer */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer-social-icons a {
+    color: #fff; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footer-social-icons a:hover {
+    color: #007bff; /* Hover color for icons */
+  }
+  
+  .footer-text p {
+    margin: 20px 0 10px; /* Spacing for copyright text */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+  
+  .footer-links a {
+    color: #bbb; /* Light grey for footer links */
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9rem; /* Small font size */
+  }
+  
+  .footer-links a:hover {
+    color: #fff; /* Hover color for footer links */
+  }
+  

@@ -1,0 +1,51 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: #fff; /* White background */
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* High z-index to stay on top of other elements */
+    padding: 10px 0; /* Vertical padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  .navbar-container {
+    width: 90%; /* Max width for navbar content */
+    max-width: 1200px; /* Centering with margin */
+    margin: 0 auto; /* Center align the navbar content */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between the logo and links */
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem; /* Larger font for logo */
+    font-weight: bold; /* Bold font */
+    color: #007bff; /* Primary color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-links {
+    display: flex; /* Flexbox for horizontal layout */
+  }
+  
+  .navbar-links a {
+    margin: 0 15px; /* Spacing between links */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight for visibility */
+    transition: color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .navbar-links a:hover {
+    color: #007bff; /* Hover effect color */
+  }
+  
+  @media (max-width: 768px) { /* Responsive styles for mobile */
+    .navbar-links {
+      display: none; /* Hide links on small screens */
+    }
+  }
+  

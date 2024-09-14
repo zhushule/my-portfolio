@@ -1,0 +1,30 @@
+/* src/components/Skills.css */
+.skills-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.2rem;
+  }
+  

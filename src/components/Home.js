@@ -34,7 +34,7 @@ const Home = () => {
         {/* Social Media Icons */}
         <div className="social-icons">
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/zhushule"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -42,7 +42,7 @@ const Home = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-username/"
+            href="https://www.linkedin.com/in/shule-zhu-600113199/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

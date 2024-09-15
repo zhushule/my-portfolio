@@ -1,76 +1,101 @@
 /* src/components/Home.css */
 
 .home {
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between content and image */
-    height: 100vh; /* Full viewport height */
-    padding: 0 10%; /* Horizontal padding */
-    background-color: #f0f8ff; /* Light background color */
-  }
-  
-  .home-content {
-    max-width: 600px; /* Limit the width for better readability */
-    z-index: 2; /* Ensure content is above background */
-  }
-  
-  .home-content h1 {
-    font-size: 3rem; /* Large font for the main heading */
-    margin-bottom: 1rem; /* Spacing below the heading */
-    color: #333; /* Text color */
-  }
-  
-  .home-content h2 {
-    font-size: 2rem; /* Subheading size */
-    margin-bottom: 1rem; /* Spacing below the subheading */
-    color: #007bff; /* Accent color */
-  }
-  
-  .home-content p {
-    font-size: 1.2rem; /* Paragraph size */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 2rem; /* Spacing below the paragraph */
-    color: #555; /* Text color */
-  }
-  
-  .social-icons {
-    margin-bottom: 2rem; /* Spacing below the icons */
-  }
-  
-  .social-icons a {
-    margin: 0 10px; /* Spacing between social icons */
-    font-size: 1.5rem; /* Icon size */
-    color: #007bff; /* Icon color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .social-icons a:hover {
-    color: #333; /* Hover color */
-  }
-  
-  .resume-button {
-    background-color: #007bff; /* Button background */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1rem; /* Button text size */
-    transition: background-color 0.3s; /* Smooth transition on hover */
-  }
-  
-  .resume-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  .home-illustration {
-    max-width: 50%; /* Adjust width of the illustration */
-    text-align: center; /* Center align illustration */
-  }
-  
-  .home-illustration img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 1; /* Layering order */
-  }
-  
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between content and image */
+  height: 100vh; /* Full viewport height */
+  padding: 0 10%; /* Horizontal padding */
+  background-image: url('../assets/cloudBg.png'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  position: relative; /* Make the element position relative to allow absolute positioning */
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+  z-index: 1; /* Make sure it is above the background but below the content */
+}
+
+.home-content {
+  max-width: 600px; /* Limit the width for better readability */
+  z-index: 2; /* Ensure content is above background */
+}
+
+.home-content h1 {
+  font-size: 3rem; /* Large font for the main heading */
+  margin-bottom: 1rem; /* Spacing below the heading */
+  color: #333; /* Text color */
+}
+
+.home-content h2 {
+  font-size: 2rem; /* Subheading size */
+  margin-bottom: 1rem; /* Spacing below the subheading */
+  color: #007bff; /* Accent color */
+}
+
+.home-content p {
+  font-size: 1.2rem; /* Paragraph size */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 2rem; /* Spacing below the paragraph */
+  color: #555; /* Text color */
+}
+
+.social-icons {
+  display: flex; /* Display as flexbox */
+  gap: 15px; /* Space between icons */
+  margin-top: 20px; /* Spacing above the icons */
+}
+
+.social-icon {
+  font-size: 2rem; /* Size of the icons */
+  color: #007bff; /* Icon color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.resume-button {
+  background-color: #007bff; /* Button background */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Button text size */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.resume-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.home-illustration {
+  flex-grow: 1; /* Allow it to grow and fill the space */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  padding: 20px; /* Add some padding to prevent tightness */
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  max-height: 80vh; /* Set a maximum height to prevent overflow */
+}
+
+.home-illustration img {
+  max-width: 100%; /* Allow the image to take full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: inline-block; /* Ensure smooth rendering */
+  max-height: 100%; /* Keep the image within the container’s height */
+  margin: 0 auto; /* Center the image */
+  object-fit: contain; /* Ensure the image is fully visible and does not overflow */
+}

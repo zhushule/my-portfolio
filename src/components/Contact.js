@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScg-9D4D4T1WnizSqyas-LGXd7PnSTvQ1GdPeTNBvvrWFDQwg/viewform?embedded=true"  // Your Google Form link
+        src="https://docs.google.com/forms/d/e/1FAIpQLScg-9D4D4T1WnizSqyas-LGXd7PnSTvQ1GdPeTNBvvrWFDQwg/viewform?embedded=true"
         width="100%"
         height="600"
         frameBorder="0"

@@ -1,7 +1,7 @@
 // src/components/Skills.js
 import React from 'react';
-import { FaReact, FaHtml5, FaPython, FaGitAlt, FaAngular, FaJava, FaAws, FaGithub, FaLinux, FaWindows, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiCplusplus, SiCsharp, SiMysql, SiPostman, SiVisualstudiocode, SiDotnet, SiMicrosoftazure } from 'react-icons/si';
+import { FaReact, FaHtml5, FaPython, FaGitAlt, FaAngular, FaJava, FaAws, FaGithub, FaLinux, FaWindows, FaDatabase, FaFlask, FaDocker, FaDochub } from 'react-icons/fa';
+import { SiTypescript, SiJavascript, SiCplusplus, SiCsharp, SiMysql, SiPostman, SiVisualstudiocode, SiDotnet, SiMicrosoftazure, SiPowershell, SiExpress, SiKubernetes } from 'react-icons/si';
 import './Skills.css'; // Import your Skills section CSS
 
 const Skills = () => {
@@ -17,6 +17,7 @@ const Skills = () => {
         { name: 'C#', icon: <SiCsharp /> },
         { name: 'Java', icon: <FaJava /> },
         { name: '.Net', icon: <SiDotnet /> },
+        { name: 'Powershell', icon: <SiPowershell />},
       ],
     },
     {
@@ -24,19 +25,18 @@ const Skills = () => {
       skills: [
         { name: 'React', icon: <FaReact /> },
         { name: 'Angular', icon: <FaAngular /> },
-      ],
-    },
-    {
-      category: 'Database Management',
-      skills: [
-        { name: 'MySQL', icon: <SiMysql /> },
-        { name: 'SSMS', icon: <FaDatabase /> },
+        { name: 'Express.js', icon: <SiExpress /> },
+        { name: 'Flask', icon: <FaFlask /> },
+        { name: 'ASP.NET', icon: <SiDotnet /> },
       ],
     },
     {
       category: 'Technologies and Tools',
       skills: [
         { name: 'Git', icon: <FaGitAlt /> },
+        { name: 'Docker', icon: <FaDocker /> },
+        { name: 'Dockerhub', icon: <FaDochub /> },
+        { name: 'Kubernetes', icon: <SiKubernetes /> },
         { name: 'GitHub', icon: <FaGithub /> },
         { name: 'Linux', icon: <FaLinux /> },
         { name: 'Windows', icon: <FaWindows /> },
@@ -44,6 +44,8 @@ const Skills = () => {
         { name: 'AWS', icon: <FaAws /> },
         { name: 'VS Code', icon: <SiVisualstudiocode /> },
         { name: 'Postman', icon: <SiPostman /> },
+        { name: 'MySQL', icon: <SiMysql /> },
+        { name: 'SSMS', icon: <FaDatabase /> },
       ],
     },
   ];

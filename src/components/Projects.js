@@ -8,14 +8,12 @@ const Projects = () => {
       title: 'My Shop',
       description: 'A full-stack e-commerce app built with React and ASP.NET Core. Hosted on Azure App Services and Azure Static Web Apps, with data stored in Azure SQL and images in Azure Blob Storage.',
       techStack: ['React', 'ASP.NET Core', 'Microsoft Azure', 'Material-UI'],
-      liveLink: 'https://orange-coast-04ce4a30f.5.azurestaticapps.net',  // Live demo link
-      codeLink: '#',  // Replace with GitHub repo or source code link if available
+      codeLink: 'https://github.com/zhushule/my-shop',  // Replace with GitHub repo or source code link if available
     },
     {
       title: 'My Authentication System',
       description: 'A full-stack web application with user authentication, admin dashboard, password reset via email, and personalized coupon recommendations. Built with React and ASP.NET Core (C#).',
       techStack: ['React', 'ASP.NET Core', 'C#', 'JavaScript', 'Axios'],
-      liveLink: '',  // No live demo, so leave this blank or display "Run Locally"
       codeLink: 'https://github.com/zhushule/SimpleAuth',  // Replace with your GitHub repo link
     },
     // Add more projects as needed
@@ -31,11 +29,6 @@ const Projects = () => {
             <p>{project.description}</p>
             <p>Tech Stack: {project.techStack.join(', ')}</p>
             <div className="project-links">
-              {project.liveLink && (
-                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                  Live Demo
-                </a>
-              )}
               <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                 View Code
               </a>
